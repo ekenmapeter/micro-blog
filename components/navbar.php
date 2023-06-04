@@ -7,12 +7,12 @@
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Business News</a></li>
-                <li><a href="#">Sports News</a></li>
-                <li><a href="#">Entertainment News</a></li>
-                <li><a href="#">World News</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="business-news.php">Business News</a></li>
+                <li><a href="sport-news.php">Sports News</a></li>
+                <li><a href="entertainment-news.php">Entertainment News</a></li>
+                <li><a href="worldnews.php">World News</a></li>
             </ul>
-            <h1 class="logo">MicroBlog</h1>
+            <a href="/"><h1 class="logo">MicroBlog</h1></a>
         </div>
     </nav>

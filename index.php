@@ -62,7 +62,7 @@
                         </div>
                     </div>
                     <div style="padding: 4px;">
-                        <button class="more-button">More News</button>
+                        <button href="business-news.php" class="more-button">More News</button>
                     </div>
                 </div>
                 <div>

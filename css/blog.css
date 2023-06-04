@@ -1,8 +1,9 @@
-a {
-  color: #000;
-  text-decoration: none;
-}
-.grid {
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 10px;
@@ -28,6 +29,19 @@ a {
       width: 100%;
     }
 
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .grid-2 div {
+      padding: 10px;
+    }
+    .grid-2 img {
+      width: 100%;
+    }
+
     .blog-section-header {
       margin-top: 10px;
       font-size: 30px;
@@ -45,6 +59,7 @@ a {
       line-height: 1.5;
       margin-top: 10px;
     }
+
     @media (max-width: 768px) {
       .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -55,39 +70,76 @@ a {
       .grid-1 img {
       width: 100%;
       }
+
+      .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .grid-2 img {
+      width: 100%;
+      }
     }
 
-.space-up {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
-}
+    .space-up {
+      padding-top: 5rem !important;
+      padding-bottom: 5rem !important;
+    }
 
 
-.border {
-  border: 1px solid black;
-  border-radius: 10px;
-}
+    .border {
+      border: 1px solid black;
+      border-radius: 10px;
+    }
 
-a.read-more {
-  color: blue !important;
-  font-weight: bold;
-  text-decoration: none;
-}
+    a.read-more {
+      color: blue !important;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
-.more-button {
-  padding: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
-  background-color: blue;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  float: right;
-  border-radius: 10px;
+    .more-button {
+      padding: 8px;
+      padding-left: 8px;
+      padding-right: 8px;
+      background-color: blue;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      float: right;
+      border-radius: 10px;
+    }
 
-}
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
 
-.row {
-  display: flex;
-  flex-direction: row;
-}
+    .pagination {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #f2f0ea;
+    border-radius: 10px;
+  }
+  .pagination li {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+  }
+
+  .pagination li:hover a{
+    background-color: #000;
+    display: inline-block;
+    padding: 6px 6px;
+    cursor: pointer;
+    color: white !important;
+    border-radius: 5px;
+  }
+
+  .pagination li.active {
+    background-color: #000;
+    color: #fff;
+  }
