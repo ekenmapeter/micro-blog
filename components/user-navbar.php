@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <nav class="navbar">
     <div class="navbar-container container">
         <input type="checkbox" name="" id="">
@@ -8,11 +7,11 @@
             <span class="line line3"></span>
         </div>
         <ul class="menu-items">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="business-news.php">Business News</a></li>
-            <li><a href="sport-news.php">Sports News</a></li>
-            <li><a href="entertainment-news.php">Entertainment News</a></li>
-            <li><a href="worldnews.php">World News</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../business-news.php">Business News</a></li>
+            <li><a href="../sport-news.php">Sports News</a></li>
+            <li><a href="../entertainment-news.php">Entertainment News</a></li>
+            <li><a href="../worldnews.php">World News</a></li>
             <?php
             if (isset($_SESSION['username'])) {
                 // User is logged in, display username
@@ -27,6 +26,6 @@
             }
             ?>
         </ul>
-        <a href="index.php"><h1 class="logo">MicroBlog</h1></a>
+        <a href="../index.php"><h1 class="logo">MicroBlog</h1></a>
     </div>
 </nav>

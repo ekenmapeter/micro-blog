@@ -7,6 +7,8 @@
         <link rel="stylesheet" type="text/css" href="css/navbar.css" />
         <link rel="stylesheet" type="text/css" href="css/footer.css" />
         <link rel="stylesheet" type="text/css" href="css/blog.css" />
+        <link rel="stylesheet" type="text/css" href="css/auth.css" />
+        <link rel="stylesheet" type="text/css" href="css/user.css" />
     </head>
     <body>
         <?php include 'components/navbar.php'; ?>
