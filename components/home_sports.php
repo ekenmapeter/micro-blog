@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entertainment News - Get the latest entertainment news around the world.</title>
-    <link rel="stylesheet" type="text/css" href="css/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="css/blog.css" />
-    <link rel="stylesheet" type="text/css" href="css/user.css" />
-</head>
-<body>
-    <?php include 'components/navbar.php'; ?>
-    <div class="space-up">
-        <div>
-            <div style="padding: 4px;">
-                <p class="blog-section-header">Entertainment News</p>
-            </div>
-            <div class="grid-2" style="padding: 4px;">
+
+           
                 <?php
 
                 // API endpoint URL
-                $url = 'https://newsapi.org/v2/top-headlines?country=us&category=entertainment&apiKey=dfc95564d57a4bd88faa68c3def5bf51';
+                $url = 'https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=dfc95564d57a4bd88faa68c3def5bf51';
 
                 // Initialize cURL
                 $ch = curl_init();
@@ -53,7 +35,7 @@
                         $articles = $data['articles'];
 
                         // Define the number of articles per page
-                        $articlesPerPage = 12;
+                        $articlesPerPage = 6;
 
                         // Calculate the total number of pages
                         $totalPages = ceil(count($articles) / $articlesPerPage);
@@ -73,11 +55,11 @@
                             $description = $article['description'];
                             $url = $article['url'];
                             $imageUrl = $article['urlToImage'];
+
                             echo '<div class="grid-1 border">';
-                            echo '<img src="' . $imageUrl . '" alt="Article Image">';
+                            echo '<img src="' . $imageUrl . '" alt="Article Image" width="161px" height="108px">';
                             echo '<div>';
                             echo '<a href="' . $url . '"><h2 class="blog-title">' . $title . '</h2></a>';
-                            echo '<p class="blog-description">' . $description . '</p>';
                             echo '<a class="read-more" href="' . $url . '">Read more</a>';
                             echo '</div>';
                             echo '</div>';
@@ -91,24 +73,3 @@
                     echo 'Empty response received from the API.';
                 }
                 ?>
-            </div>
-            <?php
-            // Pagination links
-                        echo '<div style="padding: 4px;">';
-                        echo '<ul class="pagination">';
-                        if ($currentPage > 1) {
-                            echo '<li><a href="?page=' . ($currentPage - 1) . '">Prev</a></li>';
-                        }
-                        for ($i = 1; $i <= $totalPages; $i++) {
-                            echo '<li><a href="?page=' . $i . '">' . $i . '</a></li>';
-                        }
-                        if ($currentPage < $totalPages) {
-                            echo '<li><a href="?page=' . ($currentPage + 1) . '">Next</a></li>';
-                        }
-                        echo '</ul>';
-                        ?>
-        </div>
-    </div>
-    <?php include 'components/footer.php'; ?>
-</body>
-</html>
