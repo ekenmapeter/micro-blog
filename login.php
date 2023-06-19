@@ -21,6 +21,9 @@
                 <input type="password" name="password"  placeholder="Password">
                 <button>Login</button>
             </form>
+            <div class="container">
+                <a href="admin-dashboard/login.php"><button style="background-color: red;">Admin Login</button>
+            </div>
               </div>
        </div>
 

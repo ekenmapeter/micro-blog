@@ -1,3 +1,5 @@
+ <?php include '../connections/auth.php'; ?>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -45,7 +47,7 @@
               
               <div class="column">
                 <div class="card">
-                  <h3>Add New Post</h3>
+                  <a href="create-post.php"><h3>Add New Post</h3></a>
                 </div>
               </div>
             </div>

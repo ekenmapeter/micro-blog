@@ -19,7 +19,7 @@
                <form method="POST" action="../connections/admin_login_form.php">
                 <input type="text"  name="username" placeholder="Username">
                 <input type="password" name="password"  placeholder="Password">
-                <button>Login</button>
+                <button style="background-color: red;">Admin Login</button>
             </form>
               </div>
        </div>
