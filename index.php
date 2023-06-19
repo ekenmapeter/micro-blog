@@ -20,7 +20,8 @@
                         <p class="blog-section-header">Business News</p>
                     </div>
                     <div class="grid" style="padding: 4px;">
-                        <?php include 'components/home_business.php'; ?>
+                       <?php include 'components/home_business.php'; ?>
+
                     </div>
                     <div style="padding: 4px;">
                         <a href="business-news.php" class="more-button">More News</a>
@@ -44,10 +45,10 @@
                         <p class="blog-section-header">Entertainment News</p>
                     </div>
                     <div class="grid" style="padding: 4px;">
-                        <?php include 'components/entertainment-news.php'; ?>
+                       <?php include 'components/home_entertainment.php'; ?>
                     </div>
                     <div style="padding: 4px;">
-                        <a href="business-news.php" class="more-button">More News</a>
+                        <a href="entertainment-news.php" class="more-button">More News</a>
                     </div>
                 </div>
                 <div>
@@ -55,7 +56,7 @@
                         <p class="blog-section-header">World News</p>
                     </div>
                     <div class="grid" style="padding: 4px;">
-                        <?php include 'components/home_world_news.php'; ?>
+                       <?php include 'components/home_world_news.php'; ?>
                     </div>
                     <div style="padding: 4px;">
                         <a href="worldnews.php" class="more-button">More News</a>

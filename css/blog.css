@@ -3,6 +3,30 @@
       text-decoration: none;
     }
 
+    .published {
+      padding: 4px;
+      background-color: #00ff00;
+      color: black;
+      font-weight: bold;
+
+    }
+
+    .unpublished {
+      padding: 4px;
+      background-color: #df2023;
+      color: white;
+      font-weight: bold;
+
+    }
+
+    .pending {
+      padding: 4px;
+      background-color: #dfdf00;
+      color: black;
+      font-weight: bold;
+
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -114,6 +138,8 @@
     .row {
       display: flex;
       flex-direction: row;
+      justify-items: center;
+      align-items: center;
     }
 
     .pagination {

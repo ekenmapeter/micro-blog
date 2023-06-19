@@ -14,12 +14,14 @@
             <li><a href="entertainment-news.php">Entertainment News</a></li>
             <li><a href="worldnews.php">World News</a></li>
             <?php
-            if (isset($_SESSION['username'])) {
-                // User is logged in, display username
+            if (isset($_SESSION['username']) && $_SESSION['username'] === 'admin') {
+                // User is logged in as admin, display admin dashboard link
+                echo '<li><a class="username-btn" href="admin-dashboard/dashboard.php">' . $_SESSION['username'] . '</a></li>';
+                echo '<li><a class="logout-btn" href="connections/logout.php">Logout</a></li>';
+            } elseif (isset($_SESSION['username']) && $_SESSION['username'] !== 'admin') {
+                // User is logged in as non-admin, display user dashboard link
                 echo '<li><a class="username-btn" href="user/dashboard.php">' . $_SESSION['username'] . '</a></li>';
                 echo '<li><a class="logout-btn" href="connections/logout.php">Logout</a></li>';
-                
-
             } else {
                 // User is not logged in, display login and register links
                 echo '<li><a href="login.php">Login</a></li>';
