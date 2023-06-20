@@ -1,8 +1,9 @@
 <?php
+include '../connections/connectDB.php';
+
 session_start();
 
 
-include '../connections/connectDB.php';
 
 
 // Check if the user is logged in
