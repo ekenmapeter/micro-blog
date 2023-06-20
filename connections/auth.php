@@ -1,6 +1,10 @@
 <?php
 session_start();
 
+
+include '../connections/connectDB.php';
+
+
 // Check if the user is logged in
 if (!isset($_SESSION['username'])) {
     // User is not logged in, redirect to the login page

@@ -15,7 +15,7 @@
             <?php
             if (isset($_SESSION['username'])) {
                 // User is logged in, display username
-                echo '<li><a class="username-btn" href="admin-dashboard/dashboard.php">' . $_SESSION['username'] . '</a></li>';
+                echo '<li><a class="username-btn" href="dashboard.php">' . $_SESSION['username'] . '</a></li>';
                 echo '<li><a class="logout-btn" href="../connections/logout.php">Logout</a></li>';
                 
 

@@ -1,4 +1,6 @@
 <?php
+include '../connections/auth.php';
+
 // Retrieve the new articles count from the database
 $servername = 'localhost';
 $username = 'root';
