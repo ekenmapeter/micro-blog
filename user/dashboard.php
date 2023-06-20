@@ -12,6 +12,9 @@
         <link rel="stylesheet" type="text/css" href="../css/blog.css" />
         <link rel="stylesheet" type="text/css" href="../css/auth.css" />
         <link rel="stylesheet" type="text/css" href="../css/user.css" />
+        <link rel="stylesheet" type="text/css" href="../css/dashboard.css" />
+
+        <link rel="stylesheet" type="text/css" href="../css/dashboard.css" />
     </head>
     <body>
         <?php include '../components/user-navbar.php'; ?>
@@ -22,36 +25,19 @@
   <header>
     <h1>User Dashboard</h1>
   </header>
-  <main>
-    <section>
-      <h2>Recent Posts</h2>
-      <ul>
-        <li>
-          <a href="#">This is a recent post</a>
-        </li>
-        <li>
-          <a href="#">This is another recent post</a>
-        </li>
-        <li>
-          <a href="#">This is one more recent post</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2>Statistics</h2>
-      <ul>
-        <li>
-          <strong>Total Posts:</strong> 10
-        </li>
-        <li>
-          <strong>Total Views:</strong> 1000
-        </li>
-        <li>
-          <strong>Average Views Per Post:</strong> 100
-        </li>
-      </ul>
-    </section>
-  </main>
+    <div class="space-up">
+          <div class="container" style="margin-bottom: 15px;">
+            <h2 style="margin-bottom: 6px;">Welcome, <?php echo $_SESSION['username']; ?> .</h2>
+            <p style="margin-bottom: 6px;">The following are the current statistic on your blog.</p>
+              <div class="card">
+                  <a href="create-user-post.php"><h3>Add New Post</h3></a>
+              </div>
+          </div>
+          <div class="container" style="margin-bottom: 15px;">
+        <?php include '../components/total_user_post_section.php'; ?>
+      </div>
+          
+          </div>
 
         <?php include '../components/footer.php'; ?>
     </body>
